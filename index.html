@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="icon" type="image/png" href="https://scontent.fcok14-1.fna.fbcdn.net/v/t39.8562-6/120009688_325579128711709_1736249742330805861_n.png?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=uSX-ftUFyBgAX8cXIW3&_nc_ht=scontent.fcok14-1.fna&oh=00_AfA34M8ru2R1K5XhC8EchJ_-qjYyggxAnGUlfyHQWLL0qQ&oe=6483A33D"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- ---------------------------------------------nav bar start -------------------------------------------->
+    <div class="container">
+    <nav class="navbar navbar-expand-sm ">
+        <div class="container-fluid m">
+          <a class="navbar-brand " href="#"><img class="image-logo mx-4" src="https://scontent.fcok14-1.fna.fbcdn.net/v/t39.8562-6/120009688_325579128711709_1736249742330805861_n.png?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=uSX-ftUFyBgAX8cXIW3&_nc_ht=scontent.fcok14-1.fna&oh=00_AfA34M8ru2R1K5XhC8EchJ_-qjYyggxAnGUlfyHQWLL0qQ&oe=6483A33D" alt=""></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mx-5 text-center navbar-coler rounded-circle ">
+              <li class="nav-item">
+                <a class="nav-link active hover-effect " aria-current="page" href="#"> Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active hover-effect" aria-current="page" href="#">Desktop app</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active hover-effect" aria-current="page" href="#">Privacy and safety</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active hover-effect" aria-current="page" href="#">For developers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+<!-- --------------------------------------------------nav bar end ----------------------------------------------->
+<!-- --------------------------------------------main body container start ------------------------------------>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 ">
+            <div class="row text-start">
+                <h1 class=" fw-bold display-2 mx-4 mt-4 maza">Hang out <br>
+                   
+                    anytime, 
+                   anywhere</h1>
+            </div>
+            <div class="row ">
+                <p class="hello mx-4 text-secondary mt-3">Messenger makes it easy and fun to stay close to your <br> favourite people.</p>
+            </div>
+            <div class="row ">
+
+              <!------------------------------------------------------ form start ------------------------------------------------------->
+                <form action="/" method="get">
+                    <div class="mt-3">
+                        <input class="mx-4 mt-4 border-0 rounded-1 hello" style=" background: rgb(238, 235, 235) ;" placeholder=" Email address or phone number" id="name" name="name" type="text" onkeyup="emailError()">
+                        <span id="Email-error"></span>
+                        
+
+                    </div>
+                    <div>
+                        <input class="mx-4 mt-3 border-0 rounded-1 hello" style=" background: rgb(238, 235, 235) ;" placeholder=" password" id="Password" name="name" type="password" onkeyup="passwordError()">
+                        <span id="password-error"></span>
+                        
+
+                    </div>
+                    <div class="mt-5 d-flex">
+                        
+                        <button id="log-in" class="btn  btn-primary rounded-5 mx-4 buttonsize mt-2 " onclick="btnclick()"> Log In</button>
+                       
+                        <p class="mt-3"><a onclick="forgot()" class="link-opacity-50-hover fw-semibold forgot " href="#">Forgotten your password?</a></p>
+                    </div>
+                    <div class=" mt-4 form-check">
+                        <input type="checkbox" class="form-check-input check-me mt-2 mx-1" id="exampleCheck1">
+                        <label class="form-check-label check-me-font mt-1" for="exampleCheck1">Keep me singed in</label>
+                      </div>
+                </form>
+            </div>
+            <div class="row mx-2 mt-5">
+                <div class="col-6">
+                    <img class="last-imge-size " src="https://scontent.fblr4-3.fna.fbcdn.net/v/t39.8562-6/119597221_2801552506611915_4465041091818364564_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=xZj4dRpsKHEAX8ukFB2&_nc_ht=scontent.fblr4-3.fna&oh=00_AfCovWGOYbFiljB6r6_3ooHjWz7wa78CWdeTi2yuA6J2jw&oe=648419B5" alt="">
+                </div>
+                <div class="col-6 ">
+                    <img class="last-imge-size" src="https://scontent.fblr4-3.fna.fbcdn.net/v/t39.8562-6/119623783_679418069326044_1960140840932205061_n.png?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=Bd1r8ampT4UAX_kB7mB&_nc_ht=scontent.fblr4-3.fna&oh=00_AfB09AbSWw6dLALl4SCOLeLhRPzEyUljCLrj_KIMOj5oRg&oe=648486DD" alt="">
+                </div>
+            </div>
+             
+        </div>
+        <div class="col-md-6  justify-content-center text-center">
+           <div class=""> <img class="image-size me-5 mt-3 img-fluid " src="https://scontent.fcok14-1.fna.fbcdn.net/v/t39.8562-6/120973513_338186077283942_8148888802958728934_n.png?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=hO3iXvcPfYwAX_SRP8s&_nc_ht=scontent.fcok14-1.fna&oh=00_AfBhHei-18YjwzAGJja0ljBRAvOywDF8l5aKlLXSWiFUoQ&oe=64835C67" alt=""></div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------------------------------------------- end --------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------ footee start ---------------------------------------------->
+<footer class=" d-flex  ">
+    <div class="container  mx-5 mt-3">
+        <div class="row  align-item-center">
+            <div class="col-md-6 d-flex mt-3 justify-content-start">
+                <p class="last-meta col-2 fw-semibold">© Meta 2023.
+                </p>
+                <p class="last-para col-11">The Apple and Google Play logos are trademarks of their respective owners.</p>
+            </div>
+            <div class="col-md-6 d-flex  justify-content-end">
+                <p class="last-meta  mx-2 mt-2">Privacy Policy</p>
+                <p class="last-meta mx-2 mt-2">Terms</p>
+
+                <button class="  dropdown-toggle border-0 btn-drop margin-costum" data-bs-toggle="dropdown" aria-expanded="false">
+                   English
+                  </button>
+                  <ul class="dropdown-menu  border-0  ">
+                    <li><a class="dropdown-item last-dop-size" href="#">Čeština‎</a></li>
+                    <li><a class="dropdown-item last-dop-size" href="#">Dansk‎</a></li>
+                    <li><a class="dropdown-item last-dop-size" href="#">Deutsch‎</a></li>
+                    <li><a class="dropdown-item last-dop-size" href="#">English (UK)</a></li>
+                    <li><a class="dropdown-item last-dop-size" href="#">English (US)‎</a></li>
+                    <li><a class="dropdown-item last-dop-size" href="#">Español (España)‎</a></li>
+                  </ul>   
+                  
+                  <img class="img-laaast-logo mb-3" src="https://scontent.fcok14-1.fna.fbcdn.net/v/t39.8562-6/284131241_398860802255675_7090232386370085328_n.png?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=JSehFw1nEe0AX8TxAX_&_nc_ht=scontent.fcok14-1.fna&oh=00_AfC5lhmaCZibN5A-rbVLGDDcQCOWRT2edxy2JIaa2SvmVQ&oe=6484B7C6" alt="">
+                  
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+      <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+</body>
+</html>

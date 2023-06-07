@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.image-logo{
+    height: 40px;
+}
+.navbar-nav{
+    font-weight: 600;
+}
+.hover-effect::after{
+    content: "";
+    display: block;
+    background-color: blue;
+    height: 2px;
+    width: 0;
+    transition: 0.3s; 
+}
+.hover-effect:hover::after{
+    width: 100%;
+}
+@media(max-width:553px){
+    .navbar-coler{
+        background-color: gainsboro;  
+    }
+}
+.maza{
+  background: linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.last-imge-size{  
+    height: 45px;
+}
+.btn-drop{  
+    background-color: transparent;   
+}
+
+.img-laaast-logo{
+    height: 35px;
+    margin-top: 5px;
+}
+.margin-costum{
+    margin-bottom: 15px;
+}
+.hello{
+    width: 250px;
+}
+.buttonsize{
+    height: 25px;
+}
